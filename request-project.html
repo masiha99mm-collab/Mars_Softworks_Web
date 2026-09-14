@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>درخواست پروژه | Mars Softworks</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* =========================================================
+           صفحه درخواست پروژه
+           ========================================================= */
+
+        html {
+            direction: rtl;
+        }
+
+        body {
+            direction: rtl;
+            text-align: right;
+        }
+
+
+        /* =========================================================
+           محتوای اصلی صفحه
+           ========================================================= */
+
+        .project-page {
+            min-height: 100vh;
+            padding: 70px 24px 80px;
+            box-sizing: border-box;
+            direction: rtl;
+        }
+
+        .project-container {
+            width: min(900px, 100%);
+            margin: 0 auto;
+            direction: rtl;
+        }
+
+
+        /* =========================================================
+           عنوان صفحه
+           ========================================================= */
+
+        .project-header {
+            margin-bottom: 35px;
+            direction: rtl;
+            text-align: right;
+        }
+
+        .project-header .section-kicker {
+            margin-bottom: 12px;
+            direction: rtl;
+            text-align: right;
+        }
+
+        .project-header h1 {
+            margin: 0;
+            color: #ffffff;
+            direction: rtl;
+            text-align: right;
+        }
+
+        .project-header p {
+            max-width: 760px;
+            margin: 18px 0 0;
+            color: #ffffff;
+            line-height: 2;
+            direction: rtl;
+            text-align: right;
+        }
+
+
+        /* =========================================================
+           کارت فرم
+           ========================================================= */
+
+        .project-form-card {
+            width: 100%;
+            padding: 24px;
+            box-sizing: border-box;
+
+            border-radius: 20px;
+
+            background: rgba(255, 255, 255, 0.03);
+
+            border: 1px solid rgba(255, 255, 255, 0.08);
+
+            direction: rtl;
+
+            overflow: hidden;
+        }
+
+
+        /* =========================================================
+           فرم Tally
+           ========================================================= */
+
+        .project-form-card iframe {
+            display: block;
+
+            width: 100%;
+
+            min-height: 900px;
+
+            border: 0;
+
+            direction: rtl;
+
+            background: transparent;
+        }
+
+
+        /* =========================================================
+           دکمه بازگشت
+           ========================================================= */
+
+        .project-back {
+            display: flex;
+
+            justify-content: flex-start;
+
+            margin-top: 28px;
+
+            direction: rtl;
+        }
+
+        .project-back a {
+            text-decoration: none;
+        }
+
+
+        /* =========================================================
+           نمایش مناسب در موبایل
+           ========================================================= */
+
+        @media (max-width: 700px) {
+
+            .project-page {
+                padding: 45px 16px 60px;
+            }
+
+            .project-header {
+                text-align: right;
+            }
+
+            .project-header h1 {
+                text-align: right;
+            }
+
+            .project-header p {
+                text-align: right;
+            }
+
+            .project-form-card {
+                padding: 10px;
+                border-radius: 16px;
+            }
+
+            .project-form-card iframe {
+                min-height: 1050px;
+            }
+
+            .project-back {
+                justify-content: center;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- =========================================================
+         صفحه درخواست پروژه
+         ========================================================= -->
+
+    <main class="project-page">
+
+        <div class="project-container">
+
+
+            <!-- =================================================
+                 عنوان و توضیحات
+                 ================================================= -->
+
+            <header class="project-header">
+
+                <div class="section-kicker">
+                    پروژه اختصاصی
+                </div>
+
+                <h1>
+                    درخواست پروژه
+                </h1>
+
+                <p>
+                    ایده یا نیاز نرم‌افزاری خود را با ما در میان بگذارید.
+                    از طراحی و توسعه یک ابزار جدید تا ساخت یک راهکار اختصاصی،
+                    می‌توانیم در مسیر تبدیل ایده به محصول واقعی همراه شما باشیم.
+                </p>
+
+            </header>
+
+
+            <!-- =================================================
+                 فرم Tally
+                 ================================================= -->
+
+            <section class="project-form-card">
+
+                <iframe
+                    data-tally-src="https://tally.so/embed/eqVxg0?hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                    loading="lazy"
+                    width="100%"
+                    height="200"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                    title="Mars Softworks"
+                ></iframe>
+
+            </section>
+
+
+            <!-- =================================================
+                 بازگشت به سایت اصلی
+                 ================================================= -->
+
+            <div class="project-back">
+
+                <a
+                    href="index.html"
+                    class="btn btn-secondary"
+                >
+                    ← بازگشت به Mars Softworks
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================================================
+         اسکریپت Tally
+         ========================================================= -->
+
+    <script>
+
+        var d = document,
+            w = "https://tally.so/widgets/embed.js",
+
+            v = function () {
+
+                if (typeof Tally !== "undefined") {
+
+                    Tally.loadEmbeds();
+
+                } else {
+
+                    d.querySelectorAll(
+                        "iframe[data-tally-src]:not([src])"
+                    ).forEach(function (e) {
+
+                        e.src = e.dataset.tallySrc;
+
+                    });
+
+                }
+
+            };
+
+
+        if (typeof Tally !== "undefined") {
+
+            v();
+
+        } else if (
+            d.querySelector(
+                'script[src="' + w + '"]'
+            ) == null
+        ) {
+
+            var s = d.createElement("script");
+
+            s.src = w;
+
+            s.onload = v;
+
+            s.onerror = v;
+
+            d.body.appendChild(s);
+
+        }
+
+    </script>
+
+</body>
+
+</html>
