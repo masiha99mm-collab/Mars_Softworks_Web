@@ -1,4 +1,4 @@
 ﻿User-agent: *
 Allow: /
 
-Sitemap: https://marssoftworks.pages.dev/sitemap.xml
+Sitemap: https://mars.masiha99-mm.workers.dev/sitemap.xml
